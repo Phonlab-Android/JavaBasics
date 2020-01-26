@@ -20,22 +20,24 @@ public class MainActivity extends AppCompatActivity {
     //This is a method that is called when our button is clicked by the user
     public void clickButton(View view) {
 
+        int[] intArray = new int[20];
+        intArray[0] = 17;
+        intArray[1] = 8;
+        intArray[2] = 33;
+        intArray[3] = 2;
+        intArray[4] = 0;
+
         String stringVar = "";
         int x = 0;
-        for(int i = 0; i < 3; i = 1) {
-            stringVar = stringVar + "Hello!";
+        for(int i = 0; i < intArray.length; i = i + 1) {
+            x = x + intArray[i];
         }
 
-        updateTextView(stringVar);
-    }
-
-    void stringChanger(String name) {
-        String newSentence = "Hello " + name;
-        updateTextView(newSentence);
+        updateTextView(x);
     }
 
     //This method will update our TextView with the id "out_first_text_view"
-    public void updateTextView(String number) {
+    public void updateTextView(int number) {
         TextView ourFirstTextView = findViewById(R.id.our_first_text_view);
         ourFirstTextView.setText("" + number);
     }

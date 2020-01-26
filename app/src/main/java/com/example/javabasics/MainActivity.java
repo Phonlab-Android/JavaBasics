@@ -20,21 +20,13 @@ public class MainActivity extends AppCompatActivity {
     //This is a method that is called when our button is clicked by the user
     public void clickButton(View view) {
 
+        String stringVar = "";
+        int x = 0;
+        for(int i = 0; i < 3; i = 1) {
+            stringVar = stringVar + "Hello!";
+        }
 
-        boolean raining = false;
-        boolean cloudy = true;
-        if (raining) {
-            String rainingString = "Bring an Umbrella";
-            updateTextView(rainingString);
-        }
-        else if (cloudy) {
-            String rainingString = "Go outside and walk quickly!";
-            updateTextView(rainingString);
-        }
-        else {
-            String rainingString = "Go outside and enjoy the weather";
-            updateTextView(rainingString);
-        }
+        updateTextView(stringVar);
     }
 
     void stringChanger(String name) {

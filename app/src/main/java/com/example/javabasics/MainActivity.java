@@ -27,8 +27,13 @@ public class MainActivity extends AppCompatActivity {
         double doubleVar = 412.6;
         char charVar = 'a';
         boolean booleanVar = true;
-        String stringVar = "My first string";
+        String stringVar = "George";
         updateTextView(stringVar);
+    }
+
+    void stringChanger(String name) {
+        String newSentence = "Hello " + name;
+        updateTextView(newSentence);
     }
 
     //This method will update our TextView with the id "out_first_text_view"

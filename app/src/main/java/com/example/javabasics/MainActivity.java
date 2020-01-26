@@ -19,7 +19,12 @@ public class MainActivity extends AppCompatActivity {
 
     //This is a method that is called when our button is clicked by the user
     public void clickButton(View view) {
-        updateTextView(1);
+        int x = 3;
+        int y = 6;
+        int z = 9;
+        int anotherVariable = x - y - z;
+        int remainderVariable = z % x;
+        updateTextView(remainderVariable);
     }
 
     //This method will update our TextView with the id "out_first_text_view"

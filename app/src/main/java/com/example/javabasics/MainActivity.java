@@ -19,16 +19,22 @@ public class MainActivity extends AppCompatActivity {
 
     //This is a method that is called when our button is clicked by the user
     public void clickButton(View view) {
-        byte byteVar = 5;
-        short shortVar = 16;
-        int intVar = 888;
-        long longVar = 5000000L;
-        float floatVar = 50.0f;
-        double doubleVar = 412.6;
-        char charVar = 'a';
-        boolean booleanVar = true;
-        String stringVar = "George";
-        updateTextView(stringVar);
+
+
+        boolean raining = false;
+        boolean cloudy = true;
+        if (raining) {
+            String rainingString = "Bring an Umbrella";
+            updateTextView(rainingString);
+        }
+        else if (cloudy) {
+            String rainingString = "Go outside and walk quickly!";
+            updateTextView(rainingString);
+        }
+        else {
+            String rainingString = "Go outside and enjoy the weather";
+            updateTextView(rainingString);
+        }
     }
 
     void stringChanger(String name) {
